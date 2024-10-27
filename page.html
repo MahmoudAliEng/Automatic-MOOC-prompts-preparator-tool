@@ -1,0 +1,4298 @@
+<body
+  class="ltr view-in-course view-courseware courseware lang_fr"
+  data-new-gr-c-s-check-loaded="14.1204.0"
+  data-gr-ext-installed=""
+  cz-shortcut-listen="true"
+>
+  <div
+    style="
+      visibility: hidden;
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      height: 1px;
+      width: auto;
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+      text-align: left;
+      text-indent: 0px;
+      text-transform: none;
+      line-height: normal;
+      letter-spacing: normal;
+      word-spacing: normal;
+    "
+  >
+    <div id="MathJax_Hidden"></div>
+  </div>
+  <div id="MathJax_Message" style="display: none"></div>
+
+  <div id="page-prompt"></div>
+  <div class="window-wrap" dir="ltr">
+    <a class="nav-skip" href="#seq_content"
+      >Passer au contenu de cette vue</a
+    >
+
+    <div
+      id="sandwich-overlay"
+      class="hide-on-escape-key overlay light-shadow"
+    >
+      <ul class="">
+        <li>
+          <a href="/" data-location=""> Accueil </a>
+        </li>
+        <li>
+          <a href="/news/" data-location="news">
+            Actualités
+          </a>
+        </li>
+
+        <li>
+          <a href="/cours/" data-location="cours">
+            Tous les cours
+          </a>
+        </li>
+        <li>
+          <a
+            href="/universities/"
+            data-location="universities"
+          >
+            Etablissements
+          </a>
+        </li>
+        <li>
+          <a href="/dashboard" data-location="dashboard">
+            Mes cours
+          </a>
+        </li>
+        <li>
+          <a href="/logout"> Déconnexion </a>
+        </li>
+
+        <li>
+          <a href="/about" data-location="about"> A propos </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav id="top-menu" class="light-shadow">
+      <div class="left-header">
+        <div
+          id="sandwich-menu-icon"
+          class="header-block clickable"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <a class="fun-logo-link header-block" href="/">
+          <img
+            class="logo"
+            src="/static/funsite/images/logos/fun-fr.180d36fb5cdb.svg"
+            alt="Logo FUN"
+          />
+        </a>
+        <span
+          class="course-org color-fun-red heavy-weight header-block"
+          >universite-lyon</span
+        >
+        <span
+          class="course-display-name color-fun-blue heavy-weight header-block"
+          >Éthique de la recherche</span
+        >
+      </div>
+      <div class="right-header clickable">
+        <div class="header-block search-site-block">
+          <a href="/cours">Rechercher un cours</a>
+        </div>
+        <div class="white-header-block header-block"></div>
+        <a
+          class="user-icon-dashboard-link header-block"
+          href="/dashboard"
+        >
+          <img
+            class="user-icon"
+            src="/static/funsite/images/icones/user.0973405795bd.png"
+            alt="User icon"
+          />
+        </a>
+        <a
+          class="dashboard-user-link header-block no-decoration"
+          href="/dashboard"
+        >
+          <span class="username color-fun-white"
+            >MAHMOUDI Sid Ali</span
+          >
+        </a>
+        <a
+          href="#"
+          class="toggle-dropdown-menu header-block no-decoration"
+          aria-haspopup="true"
+        >
+          <span class="vertical-arrow color-fun-white">▾</span>
+        </a>
+        <ul
+          class="fun-dropdown-menu hide-on-escape-key"
+          aria-label="More Options"
+          role="menu"
+        >
+          <li>
+            <a href="/account/settings"
+              >Paramètres du compte</a
+            >
+          </li>
+          <li><a href="/u/Alilou_2024">Mon profil</a></li>
+          <li><a href="/logout">Se déconnecter</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="cookie-banner" style="display: none">
+      <div class="row">
+        <div class="left">
+          <div class="text">
+            En cliquant sur «&nbsp;J'accepte&nbsp;», vous
+            activez un cookie uniquement destiné à la mesure
+            d’audience.
+          </div>
+          <div class="link">
+            <a href="/privacy">&gt; En savoir plus</a>
+          </div>
+        </div>
+        <div class="right">
+          <a href="#" class="cookie-banner-button"
+            >J'accepte</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper" id="content">
+      <script type="text/template" id="image-modal-tpl">
+            <div class="wrapper-modal wrapper-modal-image">
+          <section class="image-link">
+            <%= smallHTML%>
+            <a href="#" class="modal-ui-icon action-fullscreen" role="button">
+              <span class="label">
+                <i class="icon fa fa-arrows-alt fa-large"></i> <%= gettext("Fullscreen") %>
+              </span>
+            </a>
+          </section>
+
+          <section class="image-modal">
+            <section class="image-content">
+              <div class="image-wrapper">
+                <img alt="<%= largeALT %>, <%= gettext('Large') %>" src="<%= largeSRC %>" />
+              </div>
+
+              <a href="#" class="modal-ui-icon action-close" role="button">
+                <span class="label">
+                  <i class="icon fa fa-remove fa-large"></i> <%= gettext("Close") %>
+                </span>
+              </a>
+
+              <ul class="image-controls">
+                <li class="image-control">
+                  <a href="#" class="modal-ui-icon action-zoom-in" role="button">
+                    <span class="label">
+                      <i class="icon fa fa fa-search-plus fa-large"></i> <%= gettext("Zoom In") %>
+                    </span>
+                  </a>
+                </li>
+
+                <li class="image-control">
+                  <a href="#" class="modal-ui-icon action-zoom-out is-disabled" aria-disabled="true" role="button">
+                    <span class="label">
+                      <i class="icon fa fa fa-search-minus fa-large"></i> <%= gettext("Zoom Out") %>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </script>
+
+      <nav
+        class="courseware wrapper-course-material"
+        aria-label="Cours"
+      >
+        <div class="course-material">
+          <ol class="course-tabs">
+            <li>
+              <a
+                href="/courses/course-v1:universite-lyon+91001+session11/courseware"
+                class="active"
+              >
+                Cours
+                <span class="sr">, current location</span>
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/courses/course-v1:universite-lyon+91001+session11/info"
+                class=""
+              >
+                Infos du cours
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/courses/course-v1:universite-lyon+91001+session11/4cfd0ce9013b47b089f932d19bcc781e/"
+                class=""
+              >
+                Discussion
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/courses/course-v1:universite-lyon+91001+session11/40d9840562da4968ad1f4f628cec9664/"
+                class=""
+              >
+                Présentation du MOOC
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="/courses/course-v1:universite-lyon+91001+session11/progress"
+                class=""
+              >
+                Progression
+              </a>
+            </li>
+          </ol>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="course-wrapper" role="presentation">
+          <div class="course-index">
+            <div class="accordion">
+              <nav
+                class="course-navigation"
+                aria-label="Cours"
+              >
+                <a
+                  href="#module-0-ethique-et-sciences-aujourdhui-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="module-0-ethique-et-sciences-aujourdhui-parent"
+                  aria-controls="module-0-ethique-et-sciences-aujourdhui-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Module 0 - Éthique et sciences aujourd'hui"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Module 0 - Éthique et sciences aujourd'hui
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="module-0-ethique-et-sciences-aujourdhui-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 0 - Éthique et sciences aujourd'hui submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/0a518cc5a4e24419a1135c531afcd2eb/"
+                      >
+                        <p>Présentation générale du MOOC</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/aafb65234f3443838f999835293f8fa9/"
+                      >
+                        <p>For English language users</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/bb722ddc87c34ce9929eeb827c82078a/"
+                      >
+                        <p>Éthique et sciences</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/9b7aea71dda74b70a8929b6a0beb8cde/"
+                      >
+                        <p>Revue de presse</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/5738bbb5f9194b3f9219c28155c1aba4/"
+                      >
+                        <p>Organisation du MOOC</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/e2a083f2b2e244328e4b072849bfff6d/"
+                      >
+                        <p>
+                          Questions techniques sur le cours
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/317614225f114f19b7fef22765dfccc5/"
+                      >
+                        <p>Module 0 - Échanges sur le cours</p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/cf54c5d090cc42d6ace7c068be7df9cb/4e3caea376844f6bbf8a9f6ac46445a9/"
+                      >
+                        <p>Questionnaire de début de MOOC</p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name">
+                            Echéance le juin 16, 2025 at 23:00
+                            UTC</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#module-1-quest-ce-que-lethique-de-la-recherche-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="module-1-quest-ce-que-lethique-de-la-recherche-parent"
+                  aria-controls="module-1-quest-ce-que-lethique-de-la-recherche-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Module 1 - Qu'est-ce que l'éthique de la recherche?"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Module 1 - Qu'est-ce que l'éthique de la
+                    recherche?
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="module-1-quest-ce-que-lethique-de-la-recherche-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 1 - Qu'est-ce que l'éthique de la recherche? submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/c6cc90482d2640c8a38a919a128a6fd4/97725ed9bf4b487e80dc135bed9fb07e/"
+                      >
+                        <p>Introduction Module 1</p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/c6cc90482d2640c8a38a919a128a6fd4/97ffa6a7691d4eb48cf7da0eb64a596d/"
+                      >
+                        <p>
+                          Séquence 1 - Pourquoi les sciences
+                          impliquent une réflexivité éthique ?
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/c6cc90482d2640c8a38a919a128a6fd4/c75dd7df36b5434f8bafaae080f88575/"
+                      >
+                        <p>
+                          Séquence 2 - Distinguer l’éthique en
+                          recherche et l’éthique de la
+                          recherche
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/c6cc90482d2640c8a38a919a128a6fd4/f8237fc052734f64a1680c75456586e0/"
+                      >
+                        <p>
+                          Séquence 3 - Comment enquêter sur les
+                          enjeux éthiques des sciences ?
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/c6cc90482d2640c8a38a919a128a6fd4/cd3b1af6e64e47cf89aa9d1ea9818f1c/"
+                      >
+                        <p>Module 1 - Echanges sur le cours</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#module-2-pourquoi-lethique-fait-elle-partie-de-la-science-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="module-2-pourquoi-lethique-fait-elle-partie-de-la-science-parent"
+                  aria-controls="module-2-pourquoi-lethique-fait-elle-partie-de-la-science-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Module 2 - Pourquoi l'éthique fait-elle partie de la science ?"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Module 2 - Pourquoi l'éthique fait-elle
+                    partie de la science ?
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="module-2-pourquoi-lethique-fait-elle-partie-de-la-science-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 2 - Pourquoi l'éthique fait-elle partie de la science ? submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f95c25a117464a7a896970d8457ff2d0/1b5b4fcd178e4a27985ef5ab967dbc29/"
+                      >
+                        <p>Introduction Module 2</p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f95c25a117464a7a896970d8457ff2d0/f28c2bc9d3754d039500844ec0e71244/"
+                      >
+                        <p>
+                          Séquence 1 - Les implications
+                          éthiques des sciences de la nature
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f95c25a117464a7a896970d8457ff2d0/91c843720fe7442f916ea73150993365/"
+                      >
+                        <p>
+                          Séquence 2 - Les implications
+                          éthiques des sciences humaines et
+                          sociales
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f95c25a117464a7a896970d8457ff2d0/609619cd078548dbbad0a47f5544af5e/"
+                      >
+                        <p>
+                          Séquence 3 - Les implications
+                          éthiques de la recherche
+                          contemporaine, toutes disciplines
+                          confondues
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f95c25a117464a7a896970d8457ff2d0/b4cb0eeaacd249cf932f9266a13bff62/"
+                      >
+                        <p>Module 2 - Echanges sur le cours</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#module-3-sciences-technologies-innovation-et-democratie-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="module-3-sciences-technologies-innovation-et-democratie-parent"
+                  aria-controls="module-3-sciences-technologies-innovation-et-democratie-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Module 3 - Sciences, technologies, innovation et démocratie"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Module 3 - Sciences, technologies,
+                    innovation et démocratie
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="module-3-sciences-technologies-innovation-et-democratie-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 3 - Sciences, technologies, innovation et démocratie submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/218032af616a4ed0b8f4135a3f4e2a48/41e6b36ddcda4fe5a67d88834e3c65b3/"
+                      >
+                        <p>Introduction Module 3</p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/218032af616a4ed0b8f4135a3f4e2a48/6cf71fb51c8b44e6914037b567cfd02a/"
+                      >
+                        <p>
+                          Séquence 1 - La vision européenne et
+                          française de la recherche
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/218032af616a4ed0b8f4135a3f4e2a48/43ff6c58526a41b7bad1be95aae0e942/"
+                      >
+                        <p>
+                          Séquence 2 - Les controverses autour
+                          des technosciences
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/218032af616a4ed0b8f4135a3f4e2a48/e3883651a3e043c3a7a1023a588043d4/"
+                      >
+                        <p>
+                          Séquence 3 - Les nouvelles figures de
+                          la science
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/218032af616a4ed0b8f4135a3f4e2a48/16b856960676476b8dfa5ac8959074fd/"
+                      >
+                        <p>Module 3 - Echanges sur le cours</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#module-4-la-responsabilite-des-chercheurs-et-des-institutions-de-la-recherche-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="module-4-la-responsabilite-des-chercheurs-et-des-institutions-de-la-recherche-parent"
+                  aria-controls="module-4-la-responsabilite-des-chercheurs-et-des-institutions-de-la-recherche-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Module 4 - La responsabilité des chercheurs et des institutions de la recherche"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Module 4 - La responsabilité des chercheurs
+                    et des institutions de la recherche
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="module-4-la-responsabilite-des-chercheurs-et-des-institutions-de-la-recherche-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 4 - La responsabilité des chercheurs et des institutions de la recherche submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/172b9137812f4c4aa6e83afb317bbac3/a0d69cca3c314207a67d67136e9b2495/"
+                      >
+                        <p>Introduction Module 4</p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/172b9137812f4c4aa6e83afb317bbac3/1d42e60e040e41c9b6dd39f90ac17293/"
+                      >
+                        <p>
+                          Séquence 1 - La responsabilité du
+                          scientifique
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/172b9137812f4c4aa6e83afb317bbac3/66f3441c90de4d44bec5798c9f2d1f9e/"
+                      >
+                        <p>
+                          Séquence 2 - Le cas des statistiques
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/172b9137812f4c4aa6e83afb317bbac3/63cc7b6d3ccf4b2bbf05d627f0f85e89/"
+                      >
+                        <p>
+                          Séquence 3 - La responsabilité
+                          sociale des institutions
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/172b9137812f4c4aa6e83afb317bbac3/e7a874afa5d84dcc9423d881dd46fde8/"
+                      >
+                        <p>Module 4 - Echanges sur le cours</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#module-5-conflits-de-valeurs-child"
+                  role="button"
+                  class="button-chapter chapter active is-open"
+                  id="module-5-conflits-de-valeurs-parent"
+                  aria-controls="module-5-conflits-de-valeurs-child"
+                  aria-expanded="true"
+                >
+                  <span
+                    class="group-heading active"
+                    aria-label="Module 5 - Conflits de valeurs current chapter"
+                  >
+                    <span
+                      class="icon fa fa-caret-down"
+                      aria-hidden="true"
+                    ></span>
+                    Module 5 - Conflits de valeurs
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container is-open"
+                  id="module-5-conflits-de-valeurs-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Module 5 - Conflits de valeurs submenu"
+                >
+                  <div
+                    class="chapter-menu is-open"
+                    style="display: block"
+                  >
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/99f10a2520124762a5ead22b32261161/841bc678ca5f4c0f835a1e6770647687/"
+                      >
+                        <p>Introduction Module 5</p>
+                      </a>
+                    </div>
+                    <div class="menu-item graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/99f10a2520124762a5ead22b32261161/41bd2c15ab1149ae8b81f07bd463256c/"
+                      >
+                        <p>
+                          Séquence 1 - La science : un bien
+                          commun ?
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item active graded">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/99f10a2520124762a5ead22b32261161/e58fc228771d4308b2c0b33eb0e874d8/"
+                      >
+                        <p>
+                          Séquence 2 - Les conflits d’intérêts
+                          : pourquoi et comment ?
+                          <span class="sr">
+                            current section</span
+                          >
+                        </p>
+
+                        <p class="subtitle">
+                          <span class="subtitle-name"
+                            >Quiz Echéance le juin 16, 2025 at
+                            23:00 UTC</span
+                          >
+
+                          <span
+                            class="menu-icon icon fa fa-pencil-square-o"
+                            aria-hidden="true"
+                          ></span>
+                          <span class="sr"
+                            >This content is graded</span
+                          >
+                        </p>
+                      </a>
+                    </div>
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/99f10a2520124762a5ead22b32261161/6399f4b889154ffb8386b2d172cc6114/"
+                      >
+                        <p>Module 5 - Echanges sur le cours</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#questionnaire-de-fin-de-mooc-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="questionnaire-de-fin-de-mooc-parent"
+                  aria-controls="questionnaire-de-fin-de-mooc-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Questionnaire de fin de MOOC"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Questionnaire de fin de MOOC
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="questionnaire-de-fin-de-mooc-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Questionnaire de fin de MOOC submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/f1610c7bc0da4f80a85a7b18cc2ef5ae/1547114d06db4884990923e434be8d51/"
+                      >
+                        <p>Répondre au questionnaire</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="#comment-obtenir-mon-badge-child"
+                  role="button"
+                  class="button-chapter chapter"
+                  id="comment-obtenir-mon-badge-parent"
+                  aria-controls="comment-obtenir-mon-badge-child"
+                  aria-expanded="false"
+                >
+                  <span
+                    class="group-heading"
+                    aria-label="Comment obtenir mon badge ?"
+                  >
+                    <span
+                      class="icon fa fa-caret-right"
+                      aria-hidden="true"
+                    ></span>
+                    Comment obtenir mon badge ?
+                  </span>
+                </a>
+                <div
+                  class="chapter-content-container"
+                  id="comment-obtenir-mon-badge-child"
+                  tabindex="-1"
+                  role="group"
+                  aria-label="Comment obtenir mon badge ? submenu"
+                >
+                  <div class="chapter-menu">
+                    <div class="menu-item">
+                      <a
+                        href="/courses/course-v1:universite-lyon+91001+session11/courseware/1bba71077fc54c6db129e19542529354/35ee63459519470fa41e17c54b2f3632/"
+                      >
+                        <p>
+                          Procédure et accès afin d'obtenir mon
+                          badge numérique
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            </div>
+          </div>
+          <section
+            class="course-content"
+            id="course-content"
+            role="main"
+            aria-label="Content"
+          >
+            <div
+              class="xblock xblock-student_view xblock-student_view-sequential xmodule_display xmodule_SequenceModule xblock-initialized"
+              data-runtime-class="LmsRuntime"
+              data-init="XBlockToXModuleShim"
+              data-block-type="sequential"
+              data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+              data-runtime-version="1"
+              data-usage-id="block-v1:universite-lyon+91001+session11+type@sequential+block@e58fc228771d4308b2c0b33eb0e874d8"
+              data-type="Sequence"
+              data-course-id="course-v1:universite-lyon+91001+session11"
+            >
+              <div
+                id="sequence_e58fc228771d4308b2c0b33eb0e874d8"
+                class="sequence"
+                data-id="block-v1:universite-lyon+91001+session11+type@sequential+block@e58fc228771d4308b2c0b33eb0e874d8"
+                data-position="1"
+                data-ajax-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@sequential+block@e58fc228771d4308b2c0b33eb0e874d8/handler/xmodule_handler"
+              >
+                <div class="sequence-nav">
+                  <button
+                    class="sequence-nav-button button-previous disabled"
+                    disabled="disabled"
+                  >
+                    <span
+                      class="icon fa fa-chevron-prev"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="sr">Précédent</span>
+                  </button>
+                  <nav
+                    class="sequence-list-wrapper"
+                    aria-label="Unité"
+                  >
+                    <ol id="sequence-list">
+                      <li>
+                        <a
+                          class="seq_problem active progress-none"
+                          data-id="block-v1:universite-lyon+91001+session11+type@vertical+block@2011542799204915b34023367be23b23"
+                          data-element="1"
+                          href="javascript:void(0);"
+                          data-page-title="MOOCER M5S2A - Liens et conflits d'intérêts dans la recherche et l’expertise"
+                          aria-controls="seq_contents_0"
+                          id="tab_0"
+                          tabindex="0"
+                        >
+                          <i
+                            class="icon fa seq_problem"
+                            aria-hidden="true"
+                          ></i>
+                          <p>
+                            <span class="sr">problem</span
+                            >MOOCER M5S2A - Liens et conflits
+                            d'intérêts dans la recherche et
+                            l’expertise Transcription Quiz
+                            MOOCER M5S2A MOOCER M5S2B -
+                            Conflits de valeurs et injonctions
+                            paradoxales de la recherche
+                            Transcription Quiz MOOCER M5S2B
+                            MOOCER M5S2B : Pour aller plus loin
+                            MOOCER M5S2C - Les dilemmes de la
+                            propriété intellectuelle
+                            Transcription Quiz MOOCER M5S2C
+                          </p>
+                        </a>
+                      </li>
+                    </ol>
+                    <div
+                      class="left-shadow"
+                      style="opacity: 4.06901e-7"
+                    ></div>
+                    <div
+                      class="right-shadow"
+                      style="opacity: 0.0199996"
+                    ></div>
+                  </nav>
+                  <button
+                    class="sequence-nav-button button-next disabled"
+                    disabled="disabled"
+                  >
+                    <span
+                      class="icon fa fa-chevron-next"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="sr">Suivant</span>
+                  </button>
+                </div>
+
+                <div
+                  class="sr-is-focusable"
+                  tabindex="-1"
+                ></div>
+
+                <div
+                  id="seq_contents_0"
+                  aria-labelledby="tab_0"
+                  aria-hidden="true"
+                  class="seq_contents tex2jax_ignore asciimath2jax_ignore"
+                >
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-vertical"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@vertical+block@2011542799204915b34023367be23b23"
+                  data-block-type="vertical"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;div class="vert-mod"&gt; &lt;div
+                  class="vert vert-0"
+                  data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-lti_consumer"
+                  data-runtime-class="LmsRuntime"
+                  data-init="configurableLTIConsumerXblockIframeResizerInit"
+                  data-course-id="course-v1:universite-lyon+91001+session11"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c"
+                  data-block-type="lti_consumer"&gt; &lt;script
+                  type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"element_id":
+                  "ce90172423e54f028788924178862e5c"}
+                  &lt;/script&gt; &lt;div
+                  id="ce90172423e54f028788924178862e5c"
+                  class="lti_consumer lti-consumer-container"
+                  data-ask-to-send-username="True"
+                  data-ask-to-send-email="True" &gt; &lt;div
+                  data-automatic-resizing="True"
+                  data-inline-ratio="0.5625"
+                  data-inline-height="0"&gt; &lt;iframe
+                  title="MOOCER M5S2A - Liens et conflits
+                  d&amp;#39;intérêts dans la recherche et
+                  l’expertise" class="ltiLaunchFrame"
+                  name="ltiFrame-ce90172423e54f028788924178862e5c"
+                  src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c/handler/lti_launch_handler"
+                  allowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true" allow="microphone
+                  *; camera *; midi *; geolocation *;
+                  encrypted-media *; display-capture *;
+                  autoplay *" &gt;&lt;/iframe&gt; &lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+                  &lt;div class="vert vert-1"
+                  data-id="block-v1:universite-lyon+91001+session11+type@html+block@d7b9e5e2f3cc49d0be7defd56663cf33"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-html xmodule_display
+                  xmodule_HtmlModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="html"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@d7b9e5e2f3cc49d0be7defd56663cf33"
+                  data-type="HTMLModule"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "HTMLModule"}
+                  &lt;/script&gt;
+                  &lt;p&gt;T&amp;eacute;l&amp;eacute;charger la
+                  transcription de la
+                  vid&amp;eacute;o&lt;/p&gt; &lt;ul&gt;
+                  &lt;li&gt;en fran&amp;ccedil;ais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2a_MoretBailly.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2a_MoretBailly.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;en anglais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2a_MoretBailly_EN.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2a_MoretBailly_EN.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+                  class="vert vert-2"
+                  data-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-problem xmodule_display
+                  xmodule_CapaModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="problem"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"
+                  data-type="Problem"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "Problem"} &lt;/script&gt;
+                  &lt;div
+                  id="problem_9801dc345a5e4bb99edbe8297edfaec2"
+                  class="problems-wrapper"
+                  data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"
+                  data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2/handler/xmodule_handler"
+                  data-progress_status="none"
+                  data-progress_detail="0/1"&gt;&lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;div class="vert
+                  vert-3"
+                  data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-lti_consumer"
+                  data-runtime-class="LmsRuntime"
+                  data-init="configurableLTIConsumerXblockIframeResizerInit"
+                  data-course-id="course-v1:universite-lyon+91001+session11"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107"
+                  data-block-type="lti_consumer"&gt; &lt;script
+                  type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"element_id":
+                  "aad015e974c64597b7f8bf7695f4d107"}
+                  &lt;/script&gt; &lt;div
+                  id="aad015e974c64597b7f8bf7695f4d107"
+                  class="lti_consumer lti-consumer-container"
+                  data-ask-to-send-username="True"
+                  data-ask-to-send-email="True" &gt; &lt;div
+                  data-automatic-resizing="True"
+                  data-inline-ratio="0.5625"
+                  data-inline-height="0"&gt; &lt;iframe
+                  title="MOOCER M5S2B - Conflits de valeurs et
+                  injonctions paradoxales de la recherche"
+                  class="ltiLaunchFrame"
+                  name="ltiFrame-aad015e974c64597b7f8bf7695f4d107"
+                  src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107/handler/lti_launch_handler"
+                  allowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true" allow="microphone
+                  *; camera *; midi *; geolocation *;
+                  encrypted-media *; display-capture *;
+                  autoplay *" &gt;&lt;/iframe&gt; &lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+                  &lt;div class="vert vert-4"
+                  data-id="block-v1:universite-lyon+91001+session11+type@html+block@9962e8c8f3684af89358e50e4d9cc29f"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-html xmodule_display
+                  xmodule_HtmlModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="html"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@9962e8c8f3684af89358e50e4d9cc29f"
+                  data-type="HTMLModule"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "HTMLModule"}
+                  &lt;/script&gt;
+                  &lt;p&gt;T&amp;eacute;l&amp;eacute;charger la
+                  transcription de la
+                  vid&amp;eacute;o&lt;/p&gt; &lt;ul&gt;
+                  &lt;li&gt;en fran&amp;ccedil;ais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2b_Gingras.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2b_Gingras.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;en anglais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2b_Gingras_EN.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2b_Gingras_EN.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+                  class="vert vert-5"
+                  data-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-problem xmodule_display
+                  xmodule_CapaModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="problem"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"
+                  data-type="Problem"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "Problem"} &lt;/script&gt;
+                  &lt;div
+                  id="problem_9e22452da63e4c318e0eaa6355211240"
+                  class="problems-wrapper"
+                  data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"
+                  data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240/handler/xmodule_handler"
+                  data-progress_status="none"
+                  data-progress_detail="0/3"&gt;&lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;div class="vert
+                  vert-6"
+                  data-id="block-v1:universite-lyon+91001+session11+type@html+block@5b55834182be4f268759ee6951d164d3"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-html xmodule_display
+                  xmodule_HtmlModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="html"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@5b55834182be4f268759ee6951d164d3"
+                  data-type="HTMLModule"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "HTMLModule"}
+                  &lt;/script&gt; &lt;h2
+                  id="modal-window-title" class="title
+                  modal-window-title"&gt;MOOCER M5S2B : Pour
+                  aller plus loin&lt;/h2&gt; &lt;ul&gt;
+                  &lt;li&gt;Drucker Godard, Carole, Fouque, T.,
+                  Gollety, M. Le Flanchec, A. Le ressenti des
+                  enseignants-chercheurs : un conflit de
+                  valeurs. Gestion et management public, 1(4),
+                  4-22, 2013/2; Gumport, P. The contested
+                  terrain of Academic program reduction. The
+                  Journal of higher education 644(3), 283-311,
+                  1993;&lt;/li&gt; &lt;li&gt;Fochler,
+                  Maximilan. Variants of epistemic capitalism:
+                  Knowledge production and the accumulation of
+                  worth in commercial biotechnology and the
+                  academic life sciences. Science, technology,
+                  and Human values. 41/5, 922-948.
+                  2016;&lt;/li&gt; &lt;li&gt;Lam, Alice. From
+                  &amp;lsquo;Ivory tower
+                  traditionalists&amp;rsquo; to
+                  &amp;lsquo;Entrepreneurial
+                  Scientists&amp;rsquo;? Academic scientists in
+                  fuzzy University-Industry Boundaries. Social
+                  studies of science 40/2, 307-340.
+                  2010;&lt;/li&gt; &lt;li&gt;P. Texeira, B.
+                  Jngbloed, D.D. Dill, A. Amaral eds. Market
+                  sin Higher Education : Rhetoric of reality,
+                  Dordrecht : Kulwer Academic, 2004.&lt;/li&gt;
+                  &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+                  class="vert vert-7"
+                  data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-lti_consumer"
+                  data-runtime-class="LmsRuntime"
+                  data-init="configurableLTIConsumerXblockIframeResizerInit"
+                  data-course-id="course-v1:universite-lyon+91001+session11"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19"
+                  data-block-type="lti_consumer"&gt; &lt;script
+                  type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"element_id":
+                  "9e9fbb68ce12470d8e30a05d799aca19"}
+                  &lt;/script&gt; &lt;div
+                  id="9e9fbb68ce12470d8e30a05d799aca19"
+                  class="lti_consumer lti-consumer-container"
+                  data-ask-to-send-username="True"
+                  data-ask-to-send-email="True" &gt; &lt;div
+                  data-automatic-resizing="True"
+                  data-inline-ratio="0.5625"
+                  data-inline-height="0"&gt; &lt;iframe
+                  title="MOOCER M5S2C - Les dilemmes de la
+                  propriété intellectuelle "
+                  class="ltiLaunchFrame"
+                  name="ltiFrame-9e9fbb68ce12470d8e30a05d799aca19"
+                  src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19/handler/lti_launch_handler"
+                  allowfullscreen="true"
+                  webkitallowfullscreen="true"
+                  mozallowfullscreen="true" allow="microphone
+                  *; camera *; midi *; geolocation *;
+                  encrypted-media *; display-capture *;
+                  autoplay *" &gt;&lt;/iframe&gt; &lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+                  &lt;div class="vert vert-8"
+                  data-id="block-v1:universite-lyon+91001+session11+type@html+block@cc22c5b7b15b471497dadbc774573b3b"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-html xmodule_display
+                  xmodule_HtmlModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="html"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@cc22c5b7b15b471497dadbc774573b3b"
+                  data-type="HTMLModule"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "HTMLModule"}
+                  &lt;/script&gt;
+                  &lt;p&gt;T&amp;eacute;l&amp;eacute;charger la
+                  transcription de la
+                  vid&amp;eacute;o&lt;/p&gt; &lt;ul&gt;
+                  &lt;li&gt;en fran&amp;ccedil;ais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2c_Perrinet.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2c_Perrinet.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;en anglais : &lt;a
+                  href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2c_Perrinet_EN.pdf"
+                  target="[object
+                  Object]"&gt;MOOCER_M5S2c_Perrinet_EN.pdf&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt; &lt;div
+                  class="vert vert-9"
+                  data-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"&gt;
+                  &lt;div class="xblock xblock-student_view
+                  xblock-student_view-problem xmodule_display
+                  xmodule_CapaModule"
+                  data-runtime-class="LmsRuntime"
+                  data-init="XBlockToXModuleShim"
+                  data-block-type="problem"
+                  data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                  data-runtime-version="1"
+                  data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"
+                  data-type="Problem"
+                  data-course-id="course-v1:universite-lyon+91001+session11"&gt;
+                  &lt;script type="json/xblock-args"
+                  class="xblock-json-init-args"&gt;
+                  {"xmodule-type": "Problem"} &lt;/script&gt;
+                  &lt;div
+                  id="problem_ac735da2a96e4a5b8fbb7b53f397d976"
+                  class="problems-wrapper"
+                  data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"
+                  data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976/handler/xmodule_handler"
+                  data-progress_status="none"
+                  data-progress_detail="0/2"&gt;&lt;/div&gt;
+                  &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;
+                  &lt;/div&gt;
+                </div>
+                <div id="seq_content" aria-labelledby="tab_0">
+                  <div
+                    class="xblock xblock-student_view xblock-student_view-vertical xblock-initialized"
+                    data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                    data-usage-id="block-v1:universite-lyon+91001+session11+type@vertical+block@2011542799204915b34023367be23b23"
+                    data-block-type="vertical"
+                    data-course-id="course-v1:universite-lyon+91001+session11"
+                  >
+                    <div class="vert-mod">
+                      <div
+                        class="vert vert-0"
+                        data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-lti_consumer xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="configurableLTIConsumerXblockIframeResizerInit"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c"
+                          data-block-type="lti_consumer"
+                        >
+                          <div
+                            id="ce90172423e54f028788924178862e5c"
+                            class="lti_consumer lti-consumer-container"
+                            data-ask-to-send-username="True"
+                            data-ask-to-send-email="True"
+                          >
+                            <div
+                              data-automatic-resizing="True"
+                              data-inline-ratio="0.5625"
+                              data-inline-height="0"
+                            >
+                              <iframe
+                                title="MOOCER M5S2A - Liens et conflits d'intérêts dans la recherche et l’expertise"
+                                class="ltiLaunchFrame"
+                                name="ltiFrame-ce90172423e54f028788924178862e5c"
+                                src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@ce90172423e54f028788924178862e5c/handler/lti_launch_handler"
+                                allowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                mozallowfullscreen="true"
+                                allow="microphone *; camera *; midi *; geolocation *; encrypted-media *; display-capture *; autoplay *"
+                                id="iFrameResizer0"
+                                scrolling="no"
+                                style="
+                                  overflow: hidden;
+                                  height: 467px;
+                                "
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-1"
+                        data-id="block-v1:universite-lyon+91001+session11+type@html+block@d7b9e5e2f3cc49d0be7defd56663cf33"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="html"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@d7b9e5e2f3cc49d0be7defd56663cf33"
+                          data-type="HTMLModule"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <p>
+                            Télécharger la transcription de la
+                            vidéo
+                          </p>
+                          <ul>
+                            <li>
+                              en français :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2a_MoretBailly.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2a_MoretBailly.pdf</a
+                              >
+                            </li>
+                            <li>
+                              en anglais :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2a_MoretBailly_EN.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2a_MoretBailly_EN.pdf</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-2"
+                        data-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="problem"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"
+                          data-type="Problem"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <div
+                            id="problem_9801dc345a5e4bb99edbe8297edfaec2"
+                            class="problems-wrapper"
+                            data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2"
+                            data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@9801dc345a5e4bb99edbe8297edfaec2/handler/xmodule_handler"
+                            data-progress_status="none"
+                            data-progress_detail="0/1"
+                          >
+                            <h2 class="problem-header">
+                              Quiz MOOCER M5S2A
+                            </h2>
+
+                            <div class="problem-progress">
+                              (1 point possible)
+                            </div>
+
+                            <div class="problem">
+                              <div aria-live="polite">
+                                <div>
+                                  <p>
+                                    Pour quelles raisons la
+                                    problématique des conflits
+                                    d’intérêt est-elle amenée à
+                                    se développer ? (2 réponses
+                                    attendues) /
+                                    <i
+                                      >Why are issues of
+                                      conflict of interests on
+                                      the rise? (two answers
+                                      are required)</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      class="choicegroup capa_inputtype"
+                                      id="inputtype_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                    >
+                                      <fieldset
+                                        role="checkboxgroup"
+                                        aria-label=""
+                                      >
+                                        <label
+                                          for="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_0"
+                                        >
+                                          <input
+                                            type="checkbox"
+                                            name="input_9801dc345a5e4bb99edbe8297edfaec2_2_1[]"
+                                            id="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_0"
+                                            aria-role="radio"
+                                            aria-describedby="answer_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                            value="choice_0"
+                                            aria-multiselectable="true"
+                                          />
+                                          En raison d’une
+                                          sensibilité sociale
+                                          accrue à cette
+                                          problématique /
+                                          <i
+                                            >because of a
+                                            higher social
+                                            sensitivity to
+                                            these issues</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_1"
+                                        >
+                                          <input
+                                            type="checkbox"
+                                            name="input_9801dc345a5e4bb99edbe8297edfaec2_2_1[]"
+                                            id="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_1"
+                                            aria-role="radio"
+                                            aria-describedby="answer_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                            value="choice_1"
+                                            aria-multiselectable="true"
+                                          />
+                                          En raison du nombre
+                                          croissant d’acteurs
+                                          de la recherche /
+                                          <i
+                                            >because of a
+                                            growing number of
+                                            researchers</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_2"
+                                        >
+                                          <input
+                                            type="checkbox"
+                                            name="input_9801dc345a5e4bb99edbe8297edfaec2_2_1[]"
+                                            id="input_9801dc345a5e4bb99edbe8297edfaec2_2_1_choice_2"
+                                            aria-role="radio"
+                                            aria-describedby="answer_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                            value="choice_2"
+                                            aria-multiselectable="true"
+                                          />
+                                          En raison du
+                                          développement des
+                                          partenariats
+                                          public-privé /
+                                          <i
+                                            >because of the
+                                            development of
+                                            public-private
+                                            partnerships</i
+                                          >
+                                        </label>
+                                        <span
+                                          id="answer_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          class="status unanswered"
+                                          id="status_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                          aria-describedby="inputtype_9801dc345a5e4bb99edbe8297edfaec2_2_1"
+                                          data-tooltip="This is unanswered."
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                </div>
+                              </div>
+                              <div class="action">
+                                <input
+                                  type="hidden"
+                                  name="problem_id"
+                                  value="Quiz MOOCER M5S2A"
+                                />
+                                <button
+                                  class="check Vérification finale"
+                                  data-checking="Vérification en cours..."
+                                  data-value="Vérification finale"
+                                >
+                                  <span class="check-label"
+                                    >Vérification finale</span
+                                  ><span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <button
+                                  class="save"
+                                  data-value="Enregistrer"
+                                >
+                                  Enregistrer<span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <div
+                                  class="submission_feedback"
+                                  aria-live="polite"
+                                >
+                                  Vous avez utilisé 0 essais
+                                  sur 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-3"
+                        data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-lti_consumer xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="configurableLTIConsumerXblockIframeResizerInit"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107"
+                          data-block-type="lti_consumer"
+                        >
+                          <div
+                            id="aad015e974c64597b7f8bf7695f4d107"
+                            class="lti_consumer lti-consumer-container"
+                            data-ask-to-send-username="True"
+                            data-ask-to-send-email="True"
+                          >
+                            <div
+                              data-automatic-resizing="True"
+                              data-inline-ratio="0.5625"
+                              data-inline-height="0"
+                            >
+                              <iframe
+                                title="MOOCER M5S2B - Conflits de valeurs et injonctions paradoxales de la recherche"
+                                class="ltiLaunchFrame"
+                                name="ltiFrame-aad015e974c64597b7f8bf7695f4d107"
+                                src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@aad015e974c64597b7f8bf7695f4d107/handler/lti_launch_handler"
+                                allowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                mozallowfullscreen="true"
+                                allow="microphone *; camera *; midi *; geolocation *; encrypted-media *; display-capture *; autoplay *"
+                                id="iFrameResizer1"
+                                scrolling="no"
+                                style="
+                                  overflow: hidden;
+                                  height: 467px;
+                                "
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-4"
+                        data-id="block-v1:universite-lyon+91001+session11+type@html+block@9962e8c8f3684af89358e50e4d9cc29f"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="html"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@9962e8c8f3684af89358e50e4d9cc29f"
+                          data-type="HTMLModule"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <p>
+                            Télécharger la transcription de la
+                            vidéo
+                          </p>
+                          <ul>
+                            <li>
+                              en français :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2b_Gingras.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2b_Gingras.pdf</a
+                              >
+                            </li>
+                            <li>
+                              en anglais :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2b_Gingras_EN.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2b_Gingras_EN.pdf</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-5"
+                        data-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="problem"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"
+                          data-type="Problem"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <div
+                            id="problem_9e22452da63e4c318e0eaa6355211240"
+                            class="problems-wrapper"
+                            data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240"
+                            data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@9e22452da63e4c318e0eaa6355211240/handler/xmodule_handler"
+                            data-progress_status="none"
+                            data-progress_detail="0/3"
+                          >
+                            <h2 class="problem-header">
+                              Quiz MOOCER M5S2B
+                            </h2>
+
+                            <div class="problem-progress">
+                              (3 points possibles)
+                            </div>
+
+                            <div class="problem">
+                              <div aria-live="polite">
+                                <div>
+                                  <p>
+                                    Quel est le lien entre
+                                    éthique et conflits de
+                                    valeur dans la recherche ?
+                                    (1 réponse attendue) /
+                                    <i
+                                      >What is the link between
+                                      ethics and conflicts of
+                                      value in research ? (1
+                                      answer required)</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      id="inputtype_9e22452da63e4c318e0eaa6355211240_2_1"
+                                      class="choicegroup capa_inputtype"
+                                    >
+                                      <fieldset
+                                        aria-label="Quel est le lien entre éthique et conflits de valeur dans la recherche ? (1 réponse attendue) / <i>What is the link between ethics and conflicts of value in research ? (1 answer required)</i>"
+                                        role="radiogroup"
+                                      >
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_0"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_0"
+                                            value="choice_0"
+                                          />
+                                          Les conflits de
+                                          valeur sont un
+                                          obstacle à la
+                                          neutralité du
+                                          chercheur /
+                                          <i
+                                            >Conflicts of value
+                                            prevent the
+                                            research from being
+                                            neutral</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_1"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_1"
+                                            value="choice_1"
+                                          />
+                                          Les conflits de
+                                          valeur empêchent de
+                                          faire de la recherche
+                                          /
+                                          <i
+                                            >Conflicts of value
+                                            prevent research
+                                            from being carried
+                                            out</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_2"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_2_1_choice_2"
+                                            value="choice_2"
+                                          />
+                                          Les conflits de
+                                          valeur n'existaient
+                                          pas avant 1945 dans
+                                          la recherche /
+                                          <i
+                                            >Conflicts of value
+                                            did not exist in
+                                            research before
+                                            1945</i
+                                          >
+                                        </label>
+                                        <span
+                                          id="answer_9e22452da63e4c318e0eaa6355211240_2_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          data-tooltip="This is unanswered."
+                                          class="status unanswered"
+                                          aria-describedby="inputtype_9e22452da63e4c318e0eaa6355211240_2_1"
+                                          id="status_9e22452da63e4c318e0eaa6355211240_2_1"
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                  <section
+                                    class="solution-span"
+                                  >
+                                    <span
+                                      id="solution_9e22452da63e4c318e0eaa6355211240_solution_1"
+                                    ></span>
+                                  </section>
+                                  <p>
+                                    Quels sont les enjeux des
+                                    conflits de valeur en
+                                    sciences ? (3 réponses
+                                    attendues) /
+                                    <i
+                                      >What is at stake in
+                                      conflicts of value in
+                                      science ? (3 answers
+                                      required)</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      id="inputtype_9e22452da63e4c318e0eaa6355211240_3_1"
+                                      class="choicegroup capa_inputtype"
+                                    >
+                                      <fieldset
+                                        aria-label="Quels sont les enjeux des conflits de valeur en sciences ? (3 réponses attendues)  / <i>What is at stake in conflicts of value in science ? (3 answers required)</i>"
+                                        role="checkboxgroup"
+                                      >
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_0"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_3_1[]"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_0"
+                                            value="choice_0"
+                                          />
+                                          Ils transforment
+                                          l'identité de la
+                                          science /
+                                          <i
+                                            >They transform the
+                                            identity of
+                                            science</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_1"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_3_1[]"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_1"
+                                            value="choice_1"
+                                          />
+                                          Ils suscitent des
+                                          tensions
+                                          psychologiques sur
+                                          les chercheurs /
+                                          <i
+                                            >They give rise to
+                                            psychological
+                                            tension in
+                                            researchers</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_2"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_3_1[]"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_2"
+                                            value="choice_2"
+                                          />
+                                          Ils nuisent à la
+                                          qualité de la science
+                                          /
+                                          <i
+                                            >They damage the
+                                            quality of
+                                            science</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_3"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_3_1[]"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_3_1_choice_3"
+                                            value="choice_3"
+                                          />
+                                          Ils n'impactent pas
+                                          le coût de production
+                                          de la connaissance /
+                                          <i
+                                            >They do not impact
+                                            the cost of
+                                            production of
+                                            knowledge
+                                          </i>
+                                        </label>
+                                        <span
+                                          id="answer_9e22452da63e4c318e0eaa6355211240_3_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          data-tooltip="This is unanswered."
+                                          class="status unanswered"
+                                          aria-describedby="inputtype_9e22452da63e4c318e0eaa6355211240_3_1"
+                                          id="status_9e22452da63e4c318e0eaa6355211240_3_1"
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                  <section
+                                    class="solution-span"
+                                  >
+                                    <span
+                                      id="solution_9e22452da63e4c318e0eaa6355211240_solution_2"
+                                    ></span>
+                                  </section>
+                                  <p>
+                                    Peut-on/ faut-il lutter
+                                    contre les conflits de
+                                    valeur ? /
+                                    <i
+                                      >Can one/ should one
+                                      fight against conflicts
+                                      of value?</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      id="inputtype_9e22452da63e4c318e0eaa6355211240_4_1"
+                                      class="choicegroup capa_inputtype"
+                                    >
+                                      <fieldset
+                                        aria-label="Peut-on/ faut-il lutter contre les conflits de valeur ? / <i>Can one/ should one fight against conflicts of value?</i>"
+                                        role="radiogroup"
+                                      >
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_4_1_choice_0"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_4_1"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_4_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_4_1_choice_0"
+                                            value="choice_0"
+                                          />
+                                          Oui / <i>Yes</i>
+                                        </label>
+                                        <label
+                                          for="input_9e22452da63e4c318e0eaa6355211240_4_1_choice_1"
+                                        >
+                                          <input
+                                            name="input_9e22452da63e4c318e0eaa6355211240_4_1"
+                                            aria-describedby="answer_9e22452da63e4c318e0eaa6355211240_4_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_9e22452da63e4c318e0eaa6355211240_4_1_choice_1"
+                                            value="choice_1"
+                                          />
+                                          Non / <i>No</i>
+                                        </label>
+                                        <span
+                                          id="answer_9e22452da63e4c318e0eaa6355211240_4_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          data-tooltip="This is unanswered."
+                                          class="status unanswered"
+                                          aria-describedby="inputtype_9e22452da63e4c318e0eaa6355211240_4_1"
+                                          id="status_9e22452da63e4c318e0eaa6355211240_4_1"
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                  <section
+                                    class="solution-span"
+                                  >
+                                    <span
+                                      id="solution_9e22452da63e4c318e0eaa6355211240_solution_3"
+                                    ></span>
+                                  </section>
+                                </div>
+                              </div>
+                              <div class="action">
+                                <input
+                                  type="hidden"
+                                  name="problem_id"
+                                  value="Quiz MOOCER M5S2B"
+                                />
+                                <button
+                                  class="check Vérification finale"
+                                  data-checking="Vérification en cours..."
+                                  data-value="Vérification finale"
+                                >
+                                  <span class="check-label"
+                                    >Vérification finale</span
+                                  ><span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <button
+                                  class="save"
+                                  data-value="Enregistrer"
+                                >
+                                  Enregistrer<span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <div
+                                  class="submission_feedback"
+                                  aria-live="polite"
+                                >
+                                  Vous avez utilisé 0 essais
+                                  sur 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-6"
+                        data-id="block-v1:universite-lyon+91001+session11+type@html+block@5b55834182be4f268759ee6951d164d3"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="html"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@5b55834182be4f268759ee6951d164d3"
+                          data-type="HTMLModule"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <h2
+                            id="modal-window-title"
+                            class="title modal-window-title"
+                          >
+                            MOOCER M5S2B : Pour aller plus loin
+                          </h2>
+                          <ul>
+                            <li>
+                              Drucker Godard, Carole, Fouque,
+                              T., Gollety, M. Le Flanchec, A.
+                              Le ressenti des
+                              enseignants-chercheurs : un
+                              conflit de valeurs. Gestion et
+                              management public, 1(4), 4-22,
+                              2013/2; Gumport, P. The contested
+                              terrain of Academic program
+                              reduction. The Journal of higher
+                              education 644(3), 283-311, 1993;
+                            </li>
+                            <li>
+                              Fochler, Maximilan. Variants of
+                              epistemic capitalism: Knowledge
+                              production and the accumulation
+                              of worth in commercial
+                              biotechnology and the academic
+                              life sciences. Science,
+                              technology, and Human values.
+                              41/5, 922-948. 2016;
+                            </li>
+                            <li>
+                              Lam, Alice. From ‘Ivory tower
+                              traditionalists’ to
+                              ‘Entrepreneurial Scientists’?
+                              Academic scientists in fuzzy
+                              University-Industry Boundaries.
+                              Social studies of science 40/2,
+                              307-340. 2010;
+                            </li>
+                            <li>
+                              P. Texeira, B. Jngbloed, D.D.
+                              Dill, A. Amaral eds. Market sin
+                              Higher Education : Rhetoric of
+                              reality, Dordrecht : Kulwer
+                              Academic, 2004.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-7"
+                        data-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-lti_consumer xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="configurableLTIConsumerXblockIframeResizerInit"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19"
+                          data-block-type="lti_consumer"
+                        >
+                          <div
+                            id="9e9fbb68ce12470d8e30a05d799aca19"
+                            class="lti_consumer lti-consumer-container"
+                            data-ask-to-send-username="True"
+                            data-ask-to-send-email="True"
+                          >
+                            <div
+                              data-automatic-resizing="True"
+                              data-inline-ratio="0.5625"
+                              data-inline-height="0"
+                            >
+                              <iframe
+                                title="MOOCER M5S2C -  Les dilemmes de la propriété intellectuelle "
+                                class="ltiLaunchFrame"
+                                name="ltiFrame-9e9fbb68ce12470d8e30a05d799aca19"
+                                src="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@lti_consumer+block@9e9fbb68ce12470d8e30a05d799aca19/handler/lti_launch_handler"
+                                allowfullscreen="true"
+                                webkitallowfullscreen="true"
+                                mozallowfullscreen="true"
+                                allow="microphone *; camera *; midi *; geolocation *; encrypted-media *; display-capture *; autoplay *"
+                                id="iFrameResizer2"
+                                scrolling="no"
+                                style="
+                                  overflow: hidden;
+                                  height: 467px;
+                                "
+                              ></iframe>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-8"
+                        data-id="block-v1:universite-lyon+91001+session11+type@html+block@cc22c5b7b15b471497dadbc774573b3b"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-html xmodule_display xmodule_HtmlModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="html"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@html+block@cc22c5b7b15b471497dadbc774573b3b"
+                          data-type="HTMLModule"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <p>
+                            Télécharger la transcription de la
+                            vidéo
+                          </p>
+                          <ul>
+                            <li>
+                              en français :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2c_Perrinet.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2c_Perrinet.pdf</a
+                              >
+                            </li>
+                            <li>
+                              en anglais :
+                              <a
+                                href="/asset-v1:universite-lyon+91001+session11+type@asset+block/MOOCER_M5S2c_Perrinet_EN.pdf"
+                                target="[object Object]"
+                                >MOOCER_M5S2c_Perrinet_EN.pdf</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div
+                        class="vert vert-9"
+                        data-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"
+                      >
+                        <div
+                          class="xblock xblock-student_view xblock-student_view-problem xmodule_display xmodule_CapaModule xblock-initialized"
+                          data-runtime-class="LmsRuntime"
+                          data-init="XBlockToXModuleShim"
+                          data-block-type="problem"
+                          data-request-token="a4f4a2c6945411ef9ce5de48fc746e2e"
+                          data-runtime-version="1"
+                          data-usage-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"
+                          data-type="Problem"
+                          data-course-id="course-v1:universite-lyon+91001+session11"
+                        >
+                          <div
+                            id="problem_ac735da2a96e4a5b8fbb7b53f397d976"
+                            class="problems-wrapper"
+                            data-problem-id="block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976"
+                            data-url="/courses/course-v1:universite-lyon+91001+session11/xblock/block-v1:universite-lyon+91001+session11+type@problem+block@ac735da2a96e4a5b8fbb7b53f397d976/handler/xmodule_handler"
+                            data-progress_status="none"
+                            data-progress_detail="0/2"
+                          >
+                            <h2 class="problem-header">
+                              Quiz MOOCER M5S2C
+                            </h2>
+
+                            <div class="problem-progress">
+                              (2 points possibles)
+                            </div>
+
+                            <div class="problem">
+                              <div aria-live="polite">
+                                <div>
+                                  <p>
+                                    Quel est le but d’un dépôt
+                                    de brevet ? /
+                                    <i
+                                      >What is the purpose of
+                                      filing a patent ?</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      id="inputtype_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                      class="choicegroup capa_inputtype"
+                                    >
+                                      <fieldset
+                                        aria-label="Quel est le but d’un dépôt de brevet ? / <i>What is the purpose of filing a patent ?</i>"
+                                        role="radiogroup"
+                                      >
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_0"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_0"
+                                            value="choice_0"
+                                          />
+                                          Communiquer et mettre
+                                          à disposition
+                                          immédiatement des
+                                          résultats de
+                                          recherche. /
+                                          <i
+                                            >To communicate and
+                                            make immediately
+                                            available the
+                                            results of
+                                            research.</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_1"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_1"
+                                            value="choice_1"
+                                          />
+                                          Protéger et
+                                          communiquer des
+                                          résultats de
+                                          recherche. /
+                                          <i
+                                            >To protect and
+                                            communicate the
+                                            results of
+                                            research.</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_2"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                            aria-role="radio"
+                                            type="radio"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_2_1_choice_2"
+                                            value="choice_2"
+                                          />
+                                          Protéger et cacher
+                                          des résultats de
+                                          recherche. /
+                                          <i
+                                            >To protect and
+                                            hide the results of
+                                            research.</i
+                                          >
+                                        </label>
+                                        <span
+                                          id="answer_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          data-tooltip="This is unanswered."
+                                          class="status unanswered"
+                                          aria-describedby="inputtype_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                          id="status_ac735da2a96e4a5b8fbb7b53f397d976_2_1"
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                  <section
+                                    class="solution-span"
+                                  >
+                                    <span
+                                      id="solution_ac735da2a96e4a5b8fbb7b53f397d976_solution_1"
+                                    ></span>
+                                  </section>
+                                  <p>
+                                    Pourquoi un chercheur
+                                    universitaire (enseignant,
+                                    doctorant ou stagiaire)
+                                    doit-il publier ses
+                                    résultats de recherche ? (3
+                                    réponses attendues) /
+                                    <i
+                                      >Why should a university
+                                      researcher (teacher,
+                                      doctoral candidate, or
+                                      intern) publish the
+                                      results of their research
+                                      ? (3 answers
+                                      requested)</i
+                                    >
+                                  </p>
+                                  <span
+                                    ><form
+                                      id="inputtype_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                      class="choicegroup capa_inputtype"
+                                    >
+                                      <fieldset
+                                        aria-label="Pourquoi un chercheur universitaire (enseignant, doctorant ou stagiaire) doit-il publier ses résultats de recherche ? (3 réponses attendues) / <i>Why should a university researcher (teacher, doctoral candidate, or intern) publish the results of their research ? (3 answers requested)</i>"
+                                        role="checkboxgroup"
+                                      >
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_0"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1[]"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_0"
+                                            value="choice_0"
+                                          />
+                                          Pour obtenir un poste
+                                          de permanent de
+                                          recherche et/ou
+                                          justifier des
+                                          promotions. /
+                                          <i
+                                            >To obtain a
+                                            permanent post and
+                                            /or justify
+                                            promotions.</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_1"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1[]"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_1"
+                                            value="choice_1"
+                                          />
+                                          Pour obtenir des
+                                          royalties suite à la
+                                          commercialisation de
+                                          ses résultats de
+                                          recherche. /
+                                          <i
+                                            >To obtain
+                                            royalties following
+                                            the
+                                            commercialization
+                                            of the results of
+                                            the research.</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_2"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1[]"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_2"
+                                            value="choice_2"
+                                          />
+                                          Pour mettre à
+                                          disposition ses
+                                          travaux auprès de la
+                                          communauté
+                                          scientifique. /
+                                          <i
+                                            >To make their work
+                                            available to the
+                                            scientific
+                                            community.</i
+                                          >
+                                        </label>
+                                        <label
+                                          for="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_3"
+                                        >
+                                          <input
+                                            name="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1[]"
+                                            aria-describedby="answer_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                            aria-role="radio"
+                                            aria-multiselectable="true"
+                                            type="checkbox"
+                                            id="input_ac735da2a96e4a5b8fbb7b53f397d976_3_1_choice_3"
+                                            value="choice_3"
+                                          />
+                                          Pour garantir son
+                                          droit d'auteur. /
+                                          <i
+                                            >To guarantee his
+                                            copyright.</i
+                                          >
+                                        </label>
+                                        <span
+                                          id="answer_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                        ></span>
+                                      </fieldset>
+                                      <div
+                                        class="indicator-container"
+                                      >
+                                        <span
+                                          data-tooltip="This is unanswered."
+                                          class="status unanswered"
+                                          aria-describedby="inputtype_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                          id="status_ac735da2a96e4a5b8fbb7b53f397d976_3_1"
+                                        >
+                                          <span class="sr">
+                                            - sans réponse
+                                          </span>
+                                        </span>
+                                      </div>
+                                    </form></span
+                                  >
+                                  <section
+                                    class="solution-span"
+                                  >
+                                    <span
+                                      id="solution_ac735da2a96e4a5b8fbb7b53f397d976_solution_2"
+                                    ></span>
+                                  </section>
+                                </div>
+                              </div>
+                              <div class="action">
+                                <input
+                                  type="hidden"
+                                  name="problem_id"
+                                  value="Quiz MOOCER M5S2C"
+                                />
+                                <button
+                                  class="check Vérification finale"
+                                  data-checking="Vérification en cours..."
+                                  data-value="Vérification finale"
+                                >
+                                  <span class="check-label"
+                                    >Vérification finale</span
+                                  ><span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <button
+                                  class="save"
+                                  data-value="Enregistrer"
+                                >
+                                  Enregistrer<span class="sr">
+                                    votre réponse</span
+                                  >
+                                </button>
+                                <div
+                                  class="submission_feedback"
+                                  aria-live="polite"
+                                >
+                                  Vous avez utilisé 0 essais
+                                  sur 1
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <nav
+                  class="sequence-bottom"
+                  aria-label="Section"
+                >
+                  <button
+                    class="sequence-nav-button button-previous disabled"
+                    disabled="disabled"
+                  >
+                    <span
+                      class="icon fa fa-chevron-prev"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="sr">Précédent</span>
+                  </button>
+                  <button
+                    class="sequence-nav-button button-next disabled"
+                    disabled="disabled"
+                  >
+                    <span
+                      class="icon fa fa-chevron-next"
+                      aria-hidden="true"
+                    ></span
+                    ><span class="sr">Suivant</span>
+                  </button>
+                </nav>
+              </div>
+
+              <script type="text/javascript">
+                var sequenceNav;
+                $(document).ready(function () {
+                  sequenceNav = new SequenceNav(
+                    $(".sequence-nav")
+                  );
+                });
+              </script>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="container-footer"></div>
+
+      <nav
+        class="nav-utilities"
+        aria-label="Utilitaires du cours"
+      ></nav>
+
+      <div
+        id="accessibile-confirm-modal"
+        class="modal"
+        aria-hidden="true"
+      >
+        <div
+          class="inner-wrapper"
+          role="dialog"
+          aria-labelledby="accessibile-confirm-title"
+        >
+          <button class="close-modal">
+            <i class="icon fa fa-remove"></i>
+            <span class="sr"> Fermer </span>
+          </button>
+
+          <header>
+            <h2 id="accessibile-confirm-title">
+              Confirmer
+              <span class="sr">, ouverture modale </span>
+            </h2>
+          </header>
+          <div
+            role="alertdialog"
+            class="status message"
+            tabindex="-1"
+          >
+            <p class="message-title"></p>
+          </div>
+          <hr aria-hidden="true" />
+          <div class="actions">
+            <button class="dismiss ok-button">OK</button>
+            <button
+              class="dismiss cancel-button"
+              data-dismiss="leanModal"
+            >
+              Annuler
+            </button>
+          </div>
+        </div>
+        <a
+          href="#accessibile-confirm-modal"
+          rel="leanModal"
+          id="confirm_open_button"
+          style="display: none"
+          >ouvrir</a
+        >
+      </div>
+
+      <script type="text/javascript">
+        var accessible_confirm = function (message, callback) {
+          $("#accessibile-confirm-modal .cancel-button").click(
+            function () {
+              $(
+                "#accessibile-confirm-modal .close-modal"
+              ).click();
+            }
+          );
+          $("#accessibile-confirm-modal .ok-button").click(
+            function () {
+              $(
+                "#accessibile-confirm-modal .close-modal"
+              ).click();
+              callback();
+            }
+          );
+
+          accessible_modal(
+            "#accessibile-confirm-modal #confirm_open_button",
+            "#accessibile-confirm-modal .close-modal",
+            "#accessibile-confirm-modal",
+            ".content-wrapper"
+          );
+          $(
+            "#accessibile-confirm-modal #confirm_open_button"
+          ).click();
+          $("#accessibile-confirm-modal .message-title").html(
+            message
+          );
+        };
+      </script>
+    </div>
+
+    <div class="fun-footer">
+      <div class="courseware-width">
+        <ul class="top-footer">
+          <div class="left-md-footer">
+            <li>
+              <a href="https://www.fun-mooc.fr/fr/a-propos">
+                A propos
+              </a>
+            </li>
+            <li>
+              <a href="//www.fun-mooc.help" target="_blank">
+                Aide et Contact
+              </a>
+            </li>
+            <li>
+              <a href="https://www.fun-mooc.fr/fr/cgu">
+                Conditions générales d'utilisation
+              </a>
+            </li>
+          </div>
+          <div class="right-md-footer">
+            <li>
+              <a
+                href="https://www.fun-mooc.fr/fr/charte-utilisateurs"
+              >
+                Charte utilisateurs
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.fun-mooc.fr/fr/politique-de-confidentialite"
+              >
+                Politique de confidentialité
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.fun-mooc.fr/fr/mentions-legales"
+              >
+                Mentions légales
+              </a>
+            </li>
+          </div>
+        </ul>
+        <div class="bottom-footer">
+          <ul class="fun-footer-icons">
+            <li>
+              <a class="logo-fun" href="/">
+                <img
+                  src="/static/funsite/images/logos/fun-white-fr.1638496c00b6.svg"
+                  alt="Logo FUN"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="logo-facebook logo-social"
+                href="https://www.facebook.com/france.universite.numerique"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/static/funsite/images/logos/facebook32.5d3ffc13287a.png"
+                  alt="Facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="logo-twitter logo-social"
+                href="https://twitter.com/@FunMooc"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img
+                  src="/static/funsite/images/logos/twitter32.83dbf878a919.png"
+                  alt="Twitter"
+                />
+              </a>
+            </li>
+          </ul>
+
+          <div>
+            <a href="//www.fun-mooc.fr" target="_blank">
+              <img
+                src="/static/funsite/images/logos/funmooc-color.7db0d8aa62ca.svg"
+                height="60"
+                alt="Logo FUN Mooc"
+                style="border-radius: 4px"
+              />
+            </a>
+            <a href="//openedx.org" target="_blank">
+              <img
+                src="https://files.edx.org/openedx-logos/open-edx-logo-tag-dark.png"
+                width="140"
+                alt="Powered by Open edX"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script
+    type="text/javascript"
+    src="/static/js/vendor/jquery.scrollTo-1.4.2-min.4aa3e2dfa312.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="/static/js/vendor/flot/jquery.flot.d3d45ff0c6a8.js"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="/static/js/vendor/codemirror-compressed.dd4b74f7c5fe.js"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="/static/js/lms-courseware.94e582ddac20.js"
+    charset="utf-8"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="/static/js/discussion.9309e213b3dc.js"
+    charset="utf-8"
+  ></script>
+
+  <script type="text/javascript">
+    // Fast Preview was introduced in 2.5. However, it
+    // causes undesirable flashing/font size changes when
+    // MathJax is used for interactive preview (equation editor).
+    // Setting processSectionDelay to 0 (see below) fully eliminates
+    // fast preview, but to reduce confusion, we are also setting
+    // the option as displayed in the context menu to false.
+    // When upgrading to 2.6, check if this variable name changed.
+    window.MathJax = {
+      menuSettings: { CHTMLpreview: false },
+    };
+  </script>
+
+  <script type="text/x-mathjax-config;executed=true">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [
+          ["\\(","\\)"],
+          ['[mathjaxinline]','[/mathjaxinline]']
+        ],
+        displayMath: [
+          ["\\[","\\]"],
+          ['[mathjax]','[/mathjax]']
+        ]
+      }
+    });
+  </script>
+  <script type="text/x-mathjax-config;executed=true">
+
+    // In order to eliminate all flashing during interactive
+    // preview, it is necessary to set processSectionDelay to 0
+    // (remove delay between input and output phases). This
+    // effectively disables fast preview, regardless of
+    // the fast preview setting as shown in the context menu.
+    MathJax.Hub.processSectionDelay = 0;
+
+    MathJax.Hub.signal.Interest(function(message) {
+      if(message[0] === "End Math") {
+          set_mathjax_display_div_settings();
+      }
+    });
+    function set_mathjax_display_div_settings() {
+      $('.MathJax_Display').each(function( index ) {
+        this.setAttribute('tabindex', '0');
+        this.setAttribute('aria-live', 'off');
+        this.removeAttribute('role');
+        this.removeAttribute('aria-readonly');
+      });
+    }
+  </script>
+
+  <!-- This must appear after all mathjax-config blocks, so it is after the imports from the other templates.
+       It can't be run through static.url because MathJax uses crazy url introspection to do lazy loading of
+       MathJax extension libraries -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.5.3/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"
+  ></script>
+
+  <script type="text/javascript">
+    var $$course_id =
+      "course\u002Dv1:universite\u002Dlyon+91001+session11";
+
+    $(function () {
+      $(
+        ".ui-accordion-header a, .ui-accordion-content .subtitle-name"
+      ).each(function () {
+        var elemText = $(this)
+          .text()
+          .replace(/^\s+|\s+$/g, ""); // Strip leading and trailing whitespace
+        var wordArray = elemText.split(" ");
+        var finalTitle = "";
+        if (wordArray.length > 0) {
+          for (i = 0; i <= wordArray.length - 1; i++) {
+            finalTitle += wordArray[i];
+            if (i == wordArray.length - 2) {
+              finalTitle += "&nbsp;";
+            } else if (i == wordArray.length - 1) {
+              // Do nothing
+            } else {
+              finalTitle += " ";
+            }
+          }
+        }
+        $(this).html(finalTitle);
+      });
+    });
+  </script>
+
+  <script>
+    function LtiConsumerXBlock(runtime, element) {
+      $(function ($) {
+        // Adapted from leanModal v1.1 by Ray Stone - http://finelysliced.com.au
+        // Dual licensed under the MIT and GPL
+        // Renamed leanModal to iframeModal to avoid clash with platform-provided leanModal
+        // which removes the href attribute from iframe elements upon modal closing
+        $.fn.extend({
+          iframeModal: function (options) {
+            var $trigger = $(this);
+            var defaults = {
+              top: 100,
+              overlay: 0.5,
+              closeButton: null,
+            };
+            var overlay = $("<div id='lean_overlay'></div>");
+            $("body").append(overlay);
+            options = $.extend(defaults, options);
+            return this.each(function () {
+              var o = options;
+              $(this).click(function (e) {
+                var modal_id = $(this).data("target");
+                $("#lean_overlay").click(function () {
+                  close_modal(modal_id);
+                });
+                $(o.closeButton).click(function () {
+                  close_modal(modal_id);
+                });
+                var modal_height = $(modal_id).outerHeight();
+                var modal_width = $(modal_id).outerWidth();
+                $("#lean_overlay").css({
+                  display: "block",
+                  opacity: 0,
+                });
+                $("#lean_overlay").fadeTo(200, o.overlay);
+                $(modal_id).css({
+                  display: "block",
+                  position: "fixed",
+                  opacity: 0,
+                  "z-index": 11000,
+                  left: 50 + "%",
+                  "margin-left": -(modal_width / 2) + "px",
+                  top: o.top + "px",
+                });
+                $(modal_id).fadeTo(200, 1);
+                e.preventDefault();
+
+                /* Manage focus for modal dialog */
+                var iframe =
+                  $(modal_id).find("iframe")[0].contentWindow;
+
+                /* Set focus on close button */
+                $(o.closeButton).focus();
+
+                /* Redirect close button to iframe */
+                $(o.closeButton).on("keydown", function (e) {
+                  if (e.which === 9) {
+                    e.preventDefault();
+                    $(modal_id)
+                      .find("iframe")[0]
+                      .contentWindow.focus();
+                  }
+                });
+
+                /* Redirect non-iframe tab to close button */
+                var $inputs = $(
+                  "select, input, textarea, button, a"
+                )
+                  .filter(":visible")
+                  .not(o.closeButton);
+                $inputs.on("focus", function (e) {
+                  e.preventDefault();
+                  $(options.closeButton).focus();
+                });
+              });
+            });
+            function close_modal(modal_id) {
+              $("select, input, textarea, button, a").off(
+                "focus"
+              );
+              $("#lean_overlay").fadeOut(200);
+              $(modal_id).css({ display: "none" });
+              $trigger.focus();
+            }
+          },
+        });
+
+        var $element = $(element);
+        var $ltiContainer = $element.find(
+          ".lti-consumer-container"
+        );
+        var askToSendUsername =
+          $ltiContainer.data("ask-to-send-username") == "True";
+        var askToSendEmail =
+          $ltiContainer.data("ask-to-send-email") == "True";
+
+        // Apply click handler to modal launch button
+        $element
+          .find(".btn-lti-modal")
+          .iframeModal({
+            top: 200,
+            closeButton: ".close-modal",
+          });
+
+        // Apply click handler to new window launch button
+        $element
+          .find(".btn-lti-new-window")
+          .click(function () {
+            var launch = true;
+
+            // If this instance is configured to require username and/or email, ask user if it is okay to send them
+            // Do not launch if it is not okay
+            if (askToSendUsername && askToSendEmail) {
+              launch = confirm(
+                gettext(
+                  "Click OK to have your username and e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."
+                )
+              );
+            } else if (askToSendUsername) {
+              launch = confirm(
+                gettext(
+                  "Click OK to have your username sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."
+                )
+              );
+            } else if (askToSendEmail) {
+              launch = confirm(
+                gettext(
+                  "Click OK to have your e-mail address sent to a 3rd party application.\n\nClick Cancel to return to this page without sending your information."
+                )
+              );
+            }
+
+            if (launch) {
+              window.open($(this).data("target"));
+            }
+          });
+      });
+    }
+  </script>
+  <script>
+    /*! iFrame Resizer (iframeSizer.min.js ) - v3.6.3 - 2018-10-28
+     *  Desc: Force cross domain iframes to size to content.
+     *  Requires: iframeResizer.contentWindow.min.js to be loaded into the target frame.
+     *  Copyright: (c) 2018 David J. Bradshaw - dave@bradshaw.net
+     *  License: MIT
+     */
+
+    !(function (a) {
+      "use strict";
+      function b(a, b, c) {
+        "addEventListener" in window
+          ? a.addEventListener(b, c, !1)
+          : "attachEvent" in window &&
+            a.attachEvent("on" + b, c);
+      }
+      function c(a, b, c) {
+        "removeEventListener" in window
+          ? a.removeEventListener(b, c, !1)
+          : "detachEvent" in window &&
+            a.detachEvent("on" + b, c);
+      }
+      function d() {
+        var a,
+          b = ["moz", "webkit", "o", "ms"];
+        for (a = 0; a < b.length && !P; a += 1)
+          P = window[b[a] + "RequestAnimationFrame"];
+        P || h("setup", "RequestAnimationFrame not supported");
+      }
+      function e(a) {
+        var b = "Host page: " + a;
+        return (
+          window.top !== window.self &&
+            (b =
+              window.parentIFrame && window.parentIFrame.getId
+                ? window.parentIFrame.getId() + ": " + a
+                : "Nested host page: " + a),
+          b
+        );
+      }
+      function f(a) {
+        return M + "[" + e(a) + "]";
+      }
+      function g(a) {
+        return R[a] ? R[a].log : I;
+      }
+      function h(a, b) {
+        k("log", a, b, g(a));
+      }
+      function i(a, b) {
+        k("info", a, b, g(a));
+      }
+      function j(a, b) {
+        k("warn", a, b, !0);
+      }
+      function k(a, b, c, d) {
+        !0 === d &&
+          "object" == typeof window.console &&
+          console[a](f(b), c);
+      }
+      function l(a) {
+        function d() {
+          function a() {
+            t(U), q(V), I("resizedCallback", U);
+          }
+          f("Height"), f("Width"), u(a, U, "init");
+        }
+        function e() {
+          var a = S.substr(N).split(":");
+          return {
+            iframe: R[a[0]] && R[a[0]].iframe,
+            id: a[0],
+            height: a[1],
+            width: a[2],
+            type: a[3],
+          };
+        }
+        function f(a) {
+          var b = Number(R[V]["max" + a]),
+            c = Number(R[V]["min" + a]),
+            d = a.toLowerCase(),
+            e = Number(U[d]);
+          h(
+            V,
+            "Checking " + d + " is in range " + c + "-" + b
+          ),
+            e < c &&
+              ((e = c), h(V, "Set " + d + " to min value")),
+            e > b &&
+              ((e = b), h(V, "Set " + d + " to max value")),
+            (U[d] = "" + e);
+        }
+        function g() {
+          function b() {
+            function a() {
+              var a = 0,
+                b = !1;
+              for (
+                h(
+                  V,
+                  "Checking connection is from allowed list of origins: " +
+                    d
+                );
+                a < d.length;
+                a++
+              )
+                if (d[a] === c) {
+                  b = !0;
+                  break;
+                }
+              return b;
+            }
+            function b() {
+              var a = R[V] && R[V].remoteHost;
+              return (
+                h(V, "Checking connection is from: " + a),
+                c === a
+              );
+            }
+            return d.constructor === Array ? a() : b();
+          }
+          var c = a.origin,
+            d = R[V] && R[V].checkOrigin;
+          if (d && "" + c != "null" && !b())
+            throw new Error(
+              "Unexpected message received from: " +
+                c +
+                " for " +
+                U.iframe.id +
+                ". Message was: " +
+                a.data +
+                ". This error can be disabled by setting the checkOrigin: false option or by providing of array of trusted domains."
+            );
+          return !0;
+        }
+        function k() {
+          return (
+            M === ("" + S).substr(0, N) &&
+            S.substr(N).split(":")[0] in R
+          );
+        }
+        function l() {
+          var a =
+            U.type in { true: 1, false: 1, undefined: 1 };
+          return (
+            a &&
+              h(
+                V,
+                "Ignoring init message from meta parent page"
+              ),
+            a
+          );
+        }
+        function n(a) {
+          return S.substr(S.indexOf(":") + L + a);
+        }
+        function x(a) {
+          h(
+            V,
+            "MessageCallback passed: {iframe: " +
+              U.iframe.id +
+              ", message: " +
+              a +
+              "}"
+          ),
+            I("messageCallback", {
+              iframe: U.iframe,
+              message: JSON.parse(a),
+            }),
+            h(V, "--");
+        }
+        function y() {
+          var a = document.body.getBoundingClientRect(),
+            b = U.iframe.getBoundingClientRect();
+          return JSON.stringify({
+            iframeHeight: b.height,
+            iframeWidth: b.width,
+            clientHeight: Math.max(
+              document.documentElement.clientHeight,
+              window.innerHeight || 0
+            ),
+            clientWidth: Math.max(
+              document.documentElement.clientWidth,
+              window.innerWidth || 0
+            ),
+            offsetTop: parseInt(b.top - a.top, 10),
+            offsetLeft: parseInt(b.left - a.left, 10),
+            scrollTop: window.pageYOffset,
+            scrollLeft: window.pageXOffset,
+          });
+        }
+        function A(a, b) {
+          function c() {
+            v("Send Page Info", "pageInfo:" + y(), a, b);
+          }
+          z(c, 32, b);
+        }
+        function B() {
+          function a(a, b) {
+            function c() {
+              R[f] ? A(R[f].iframe, f) : d();
+            }
+            ["scroll", "resize"].forEach(function (d) {
+              h(f, a + d + " listener for sendPageInfo"),
+                b(window, d, c);
+            });
+          }
+          function d() {
+            a("Remove ", c);
+          }
+          function e() {
+            a("Add ", b);
+          }
+          var f = V;
+          e(), R[f] && (R[f].stopPageInfo = d);
+        }
+        function C() {
+          R[V] &&
+            R[V].stopPageInfo &&
+            (R[V].stopPageInfo(), delete R[V].stopPageInfo);
+        }
+        function D() {
+          var a = !0;
+          return (
+            null === U.iframe &&
+              (j(V, "IFrame (" + U.id + ") not found"),
+              (a = !1)),
+            a
+          );
+        }
+        function E(a) {
+          var b = a.getBoundingClientRect();
+          return (
+            p(V),
+            {
+              x: Math.floor(Number(b.left) + Number(O.x)),
+              y: Math.floor(Number(b.top) + Number(O.y)),
+            }
+          );
+        }
+        function F(a) {
+          function b() {
+            (O = f), G(), h(V, "--");
+          }
+          function c() {
+            return {
+              x: Number(U.width) + e.x,
+              y: Number(U.height) + e.y,
+            };
+          }
+          function d() {
+            window.parentIFrame
+              ? window.parentIFrame[
+                  "scrollTo" + (a ? "Offset" : "")
+                ](f.x, f.y)
+              : j(
+                  V,
+                  "Unable to scroll to requested position, window.parentIFrame not found"
+                );
+          }
+          var e = a ? E(U.iframe) : { x: 0, y: 0 },
+            f = c();
+          h(
+            V,
+            "Reposition requested from iFrame (offset x:" +
+              e.x +
+              " y:" +
+              e.y +
+              ")"
+          ),
+            window.top !== window.self ? d() : b();
+        }
+        function G() {
+          !1 !== I("scrollCallback", O) ? q(V) : r();
+        }
+        function H(a) {
+          function b() {
+            var a = E(f);
+            h(
+              V,
+              "Moving to in page link (#" +
+                d +
+                ") at x: " +
+                a.x +
+                " y: " +
+                a.y
+            ),
+              (O = { x: a.x, y: a.y }),
+              G(),
+              h(V, "--");
+          }
+          function c() {
+            window.parentIFrame
+              ? window.parentIFrame.moveToAnchor(d)
+              : h(
+                  V,
+                  "In page link #" +
+                    d +
+                    " not found and window.parentIFrame not found"
+                );
+          }
+          var d = a.split("#")[1] || "",
+            e = decodeURIComponent(d),
+            f =
+              document.getElementById(e) ||
+              document.getElementsByName(e)[0];
+          f
+            ? b()
+            : window.top !== window.self
+            ? c()
+            : h(V, "In page link #" + d + " not found");
+        }
+        function I(a, b) {
+          return m(V, a, b);
+        }
+        function J() {
+          switch ((R[V] && R[V].firstRun && Q(), U.type)) {
+            case "close":
+              R[V].closeRequestCallback
+                ? m(V, "closeRequestCallback", R[V].iframe)
+                : o(U.iframe);
+              break;
+            case "message":
+              x(n(6));
+              break;
+            case "scrollTo":
+              F(!1);
+              break;
+            case "scrollToOffset":
+              F(!0);
+              break;
+            case "pageInfo":
+              A(R[V] && R[V].iframe, V), B();
+              break;
+            case "pageInfoStop":
+              C();
+              break;
+            case "inPageLink":
+              H(n(9));
+              break;
+            case "reset":
+              s(U);
+              break;
+            case "init":
+              d(), I("initCallback", U.iframe);
+              break;
+            default:
+              d();
+          }
+        }
+        function K(a) {
+          var b = !0;
+          return (
+            R[a] ||
+              ((b = !1),
+              j(
+                U.type +
+                  " No settings for " +
+                  a +
+                  ". Message was: " +
+                  S
+              )),
+            b
+          );
+        }
+        function P() {
+          for (var a in R)
+            v(
+              "iFrame requested init",
+              w(a),
+              document.getElementById(a),
+              a
+            );
+        }
+        function Q() {
+          R[V] && (R[V].firstRun = !1);
+        }
+        var S = a.data,
+          U = {},
+          V = null;
+        "[iFrameResizerChild]Ready" === S
+          ? P()
+          : k()
+          ? ((U = e()),
+            (V = T = U.id),
+            R[V] && (R[V].loaded = !0),
+            !l() &&
+              K(V) &&
+              (h(V, "Received: " + S), D() && g() && J()))
+          : i(V, "Ignored: " + S);
+      }
+      function m(a, b, c) {
+        var d = null,
+          e = null;
+        if (R[a]) {
+          if ("function" != typeof (d = R[a][b]))
+            throw new TypeError(
+              b + " on iFrame[" + a + "] is not a function"
+            );
+          e = d(c);
+        }
+        return e;
+      }
+      function n(a) {
+        var b = a.id;
+        delete R[b];
+      }
+      function o(a) {
+        var b = a.id;
+        h(b, "Removing iFrame: " + b);
+        try {
+          a.parentNode && a.parentNode.removeChild(a);
+        } catch (c) {}
+        m(b, "closedCallback", b), h(b, "--"), n(a);
+      }
+      function p(b) {
+        null === O &&
+          ((O = {
+            x:
+              window.pageXOffset !== a
+                ? window.pageXOffset
+                : document.documentElement.scrollLeft,
+            y:
+              window.pageYOffset !== a
+                ? window.pageYOffset
+                : document.documentElement.scrollTop,
+          }),
+          h(b, "Get page position: " + O.x + "," + O.y));
+      }
+      function q(a) {
+        null !== O &&
+          (window.scrollTo(O.x, O.y),
+          h(a, "Set page position: " + O.x + "," + O.y),
+          r());
+      }
+      function r() {
+        O = null;
+      }
+      function s(a) {
+        function b() {
+          t(a), v("reset", "reset", a.iframe, a.id);
+        }
+        h(
+          a.id,
+          "Size reset requested by " +
+            ("init" === a.type ? "host page" : "iFrame")
+        ),
+          p(a.id),
+          u(b, a, "reset");
+      }
+      function t(a) {
+        function b(b) {
+          if (!a.id)
+            return void h(
+              "undefined",
+              "messageData id not set"
+            );
+          (a.iframe.style[b] = a[b] + "px"),
+            h(
+              a.id,
+              "IFrame (" +
+                e +
+                ") " +
+                b +
+                " set to " +
+                a[b] +
+                "px"
+            );
+        }
+        function c(b) {
+          J ||
+            "0" !== a[b] ||
+            ((J = !0),
+            h(
+              e,
+              "Hidden iFrame detected, creating visibility listener"
+            ),
+            A());
+        }
+        function d(a) {
+          b(a), c(a);
+        }
+        var e = a.iframe.id;
+        R[e] &&
+          (R[e].sizeHeight && d("height"),
+          R[e].sizeWidth && d("width"));
+      }
+      function u(a, b, c) {
+        c !== b.type && P
+          ? (h(b.id, "Requesting animation frame"), P(a))
+          : a();
+      }
+      function v(a, b, c, d, e) {
+        function f() {
+          var e = R[d] && R[d].targetOrigin;
+          h(
+            d,
+            "[" +
+              a +
+              "] Sending msg to iframe[" +
+              d +
+              "] (" +
+              b +
+              ") targetOrigin: " +
+              e
+          ),
+            c.contentWindow.postMessage(M + b, e);
+        }
+        function g() {
+          j(d, "[" + a + "] IFrame(" + d + ") not found");
+        }
+        function i() {
+          c && "contentWindow" in c && null !== c.contentWindow
+            ? f()
+            : g();
+        }
+        function k() {
+          function a() {
+            !R[d] ||
+              R[d].loaded ||
+              l ||
+              ((l = !0),
+              j(
+                d,
+                "IFrame has not responded within " +
+                  R[d].warningTimeout / 1e3 +
+                  " seconds. Check iFrameResizer.contentWindow.js has been loaded in iFrame. This message can be ignored if everything is working, or you can set the warningTimeout option to a higher value or zero to suppress this warning."
+              ));
+          }
+          e &&
+            R[d] &&
+            R[d].warningTimeout &&
+            (R[d].msgTimeout = setTimeout(
+              a,
+              R[d].warningTimeout
+            ));
+        }
+        var l = !1;
+        (d = d || c.id), R[d] && (i(), k());
+      }
+      function w(a) {
+        return (
+          a +
+          ":" +
+          R[a].bodyMarginV1 +
+          ":" +
+          R[a].sizeWidth +
+          ":" +
+          R[a].log +
+          ":" +
+          R[a].interval +
+          ":" +
+          R[a].enablePublicMethods +
+          ":" +
+          R[a].autoResize +
+          ":" +
+          R[a].bodyMargin +
+          ":" +
+          R[a].heightCalculationMethod +
+          ":" +
+          R[a].bodyBackground +
+          ":" +
+          R[a].bodyPadding +
+          ":" +
+          R[a].tolerance +
+          ":" +
+          R[a].inPageLinks +
+          ":" +
+          R[a].resizeFrom +
+          ":" +
+          R[a].widthCalculationMethod
+        );
+      }
+      function x(c, d) {
+        function e() {
+          function a(a) {
+            1 / 0 !== R[y][a] &&
+              0 !== R[y][a] &&
+              ((c.style[a] = R[y][a] + "px"),
+              h(y, "Set " + a + " = " + R[y][a] + "px"));
+          }
+          function b(a) {
+            if (R[y]["min" + a] > R[y]["max" + a])
+              throw new Error(
+                "Value for min" +
+                  a +
+                  " can not be greater than max" +
+                  a
+              );
+          }
+          b("Height"),
+            b("Width"),
+            a("maxHeight"),
+            a("minHeight"),
+            a("maxWidth"),
+            a("minWidth");
+        }
+        function f() {
+          var a = (d && d.id) || U.id + H++;
+          return (
+            null !== document.getElementById(a) && (a += H++),
+            a
+          );
+        }
+        function g(a) {
+          return (
+            (T = a),
+            "" === a &&
+              ((c.id = a = f()),
+              (I = (d || {}).log),
+              (T = a),
+              h(
+                a,
+                "Added missing iframe ID: " +
+                  a +
+                  " (" +
+                  c.src +
+                  ")"
+              )),
+            a
+          );
+        }
+        function i() {
+          switch (
+            (h(
+              y,
+              "IFrame scrolling " +
+                (R[y] && R[y].scrolling
+                  ? "enabled"
+                  : "disabled") +
+                " for " +
+                y
+            ),
+            (c.style.overflow =
+              !1 === (R[y] && R[y].scrolling)
+                ? "hidden"
+                : "auto"),
+            R[y] && R[y].scrolling)
+          ) {
+            case "omit":
+              break;
+            case !0:
+              c.scrolling = "yes";
+              break;
+            case !1:
+              c.scrolling = "no";
+              break;
+            default:
+              c.scrolling = R[y] ? R[y].scrolling : "no";
+          }
+        }
+        function k() {
+          ("number" != typeof (R[y] && R[y].bodyMargin) &&
+            "0" !== (R[y] && R[y].bodyMargin)) ||
+            ((R[y].bodyMarginV1 = R[y].bodyMargin),
+            (R[y].bodyMargin = R[y].bodyMargin + "px"));
+        }
+        function l() {
+          var a = R[y] && R[y].firstRun,
+            b = R[y] && R[y].heightCalculationMethod in Q;
+          !a &&
+            b &&
+            s({
+              iframe: c,
+              height: 0,
+              width: 0,
+              type: "init",
+            });
+        }
+        function m() {
+          Function.prototype.bind &&
+            R[y] &&
+            (R[y].iframe.iFrameResizer = {
+              close: o.bind(null, R[y].iframe),
+              removeListeners: n.bind(null, R[y].iframe),
+              resize: v.bind(
+                null,
+                "Window resize",
+                "resize",
+                R[y].iframe
+              ),
+              moveToAnchor: function (a) {
+                v(
+                  "Move to anchor",
+                  "moveToAnchor:" + a,
+                  R[y].iframe,
+                  y
+                );
+              },
+              sendMessage: function (a) {
+                (a = JSON.stringify(a)),
+                  v(
+                    "Send Message",
+                    "message:" + a,
+                    R[y].iframe,
+                    y
+                  );
+              },
+            });
+        }
+        function p(d) {
+          function e() {
+            v("iFrame.onload", d, c, a, !0), l();
+          }
+          b(c, "load", e), v("init", d, c, a, !0);
+        }
+        function q(a) {
+          if ("object" != typeof a)
+            throw new TypeError("Options is not an object");
+        }
+        function r(a) {
+          for (var b in U)
+            U.hasOwnProperty(b) &&
+              (R[y][b] = a.hasOwnProperty(b) ? a[b] : U[b]);
+        }
+        function t(a) {
+          return "" === a || "file://" === a ? "*" : a;
+        }
+        function u(a) {
+          (a = a || {}),
+            (R[y] = {
+              firstRun: !0,
+              iframe: c,
+              remoteHost: c.src
+                .split("/")
+                .slice(0, 3)
+                .join("/"),
+            }),
+            q(a),
+            r(a),
+            R[y] &&
+              (R[y].targetOrigin =
+                !0 === R[y].checkOrigin
+                  ? t(R[y].remoteHost)
+                  : "*");
+        }
+        function x() {
+          return y in R && "iFrameResizer" in c;
+        }
+        var y = g(c.id);
+        x()
+          ? j(y, "Ignored iFrame, already setup.")
+          : (u(d), i(), e(), k(), p(w(y)), m());
+      }
+      function y(a, b) {
+        null === S &&
+          (S = setTimeout(function () {
+            (S = null), a();
+          }, b));
+      }
+      function z(a, b, c) {
+        V[c] ||
+          (V[c] = setTimeout(function () {
+            (V[c] = null), a();
+          }, b));
+      }
+      function A() {
+        function a() {
+          function a(a) {
+            function b(b) {
+              return "0px" === (R[a] && R[a].iframe.style[b]);
+            }
+            function c(a) {
+              return null !== a.offsetParent;
+            }
+            R[a] &&
+              c(R[a].iframe) &&
+              (b("height") || b("width")) &&
+              v("Visibility change", "resize", R[a].iframe, a);
+          }
+          for (var b in R) a(b);
+        }
+        function b(b) {
+          h(
+            "window",
+            "Mutation observed: " +
+              b[0].target +
+              " " +
+              b[0].type
+          ),
+            y(a, 16);
+        }
+        function c() {
+          var a = document.querySelector("body"),
+            c = {
+              attributes: !0,
+              attributeOldValue: !1,
+              characterData: !0,
+              characterDataOldValue: !1,
+              childList: !0,
+              subtree: !0,
+            };
+          new d(b).observe(a, c);
+        }
+        var d =
+          window.MutationObserver ||
+          window.WebKitMutationObserver;
+        d && c();
+      }
+      function B(a) {
+        function b() {
+          D("Window " + a, "resize");
+        }
+        h("window", "Trigger event: " + a), y(b, 16);
+      }
+      function C() {
+        function a() {
+          D("Tab Visable", "resize");
+        }
+        "hidden" !== document.visibilityState &&
+          (h("document", "Trigger event: Visiblity change"),
+          y(a, 16));
+      }
+      function D(a, b) {
+        function c(a) {
+          return (
+            R[a] &&
+            "parent" === R[a].resizeFrom &&
+            R[a].autoResize &&
+            !R[a].firstRun
+          );
+        }
+        for (var d in R)
+          c(d) && v(a, b, document.getElementById(d), d);
+      }
+      function E() {
+        b(window, "message", l),
+          b(window, "resize", function () {
+            B("resize");
+          }),
+          b(document, "visibilitychange", C),
+          b(document, "-webkit-visibilitychange", C),
+          b(window, "focusin", function () {
+            B("focus");
+          }),
+          b(window, "focus", function () {
+            B("focus");
+          });
+      }
+      function F() {
+        function b(a, b) {
+          function c() {
+            if (!b.tagName)
+              throw new TypeError(
+                "Object is not a valid DOM element"
+              );
+            if ("IFRAME" !== b.tagName.toUpperCase())
+              throw new TypeError(
+                "Expected <IFRAME> tag, found <" +
+                  b.tagName +
+                  ">"
+              );
+          }
+          b && (c(), x(b, a), e.push(b));
+        }
+        function c(a) {
+          a &&
+            a.enablePublicMethods &&
+            j(
+              "enablePublicMethods option has been removed, public methods are now always available in the iFrame"
+            );
+        }
+        var e;
+        return (
+          d(),
+          E(),
+          function (d, f) {
+            switch (((e = []), c(d), typeof f)) {
+              case "undefined":
+              case "string":
+                Array.prototype.forEach.call(
+                  document.querySelectorAll(f || "iframe"),
+                  b.bind(a, d)
+                );
+                break;
+              case "object":
+                b(d, f);
+                break;
+              default:
+                throw new TypeError(
+                  "Unexpected data type (" + typeof f + ")"
+                );
+            }
+            return e;
+          }
+        );
+      }
+      function G(a) {
+        a.fn
+          ? a.fn.iFrameResize ||
+            (a.fn.iFrameResize = function (a) {
+              function b(b, c) {
+                x(c, a);
+              }
+              return this.filter("iframe").each(b).end();
+            })
+          : i(
+              "",
+              "Unable to bind to jQuery, it is not fully loaded."
+            );
+      }
+      if ("undefined" != typeof window) {
+        var H = 0,
+          I = !1,
+          J = !1,
+          K = "message",
+          L = K.length,
+          M = "[iFrameSizer]",
+          N = M.length,
+          O = null,
+          P = window.requestAnimationFrame,
+          Q = {
+            max: 1,
+            scroll: 1,
+            bodyScroll: 1,
+            documentElementScroll: 1,
+          },
+          R = {},
+          S = null,
+          T = "Host Page",
+          U = {
+            autoResize: !0,
+            bodyBackground: null,
+            bodyMargin: null,
+            bodyMarginV1: 8,
+            bodyPadding: null,
+            checkOrigin: !0,
+            inPageLinks: !1,
+            enablePublicMethods: !0,
+            heightCalculationMethod: "bodyOffset",
+            id: "iFrameResizer",
+            interval: 32,
+            log: !1,
+            maxHeight: 1 / 0,
+            maxWidth: 1 / 0,
+            minHeight: 0,
+            minWidth: 0,
+            resizeFrom: "parent",
+            scrolling: !1,
+            sizeHeight: !0,
+            sizeWidth: !1,
+            warningTimeout: 5e3,
+            tolerance: 0,
+            widthCalculationMethod: "scroll",
+            closedCallback: function () {},
+            initCallback: function () {},
+            messageCallback: function () {
+              j("MessageCallback function not defined");
+            },
+            resizedCallback: function () {},
+            scrollCallback: function () {
+              return !0;
+            },
+          },
+          V = {};
+        window.jQuery && G(window.jQuery),
+          false
+            ? define([], F)
+            : "object" == typeof module &&
+              "object" == typeof module.exports
+            ? (module.exports = F())
+            : (window.iFrameResize =
+                window.iFrameResize || F());
+      }
+    })();
+    //# sourceMappingURL=iframeResizer.map
+  </script>
+  <script>
+    function configurableLTIConsumerXblockIframeResizerInit(
+      runtime,
+      element,
+      json_args
+    ) {
+      var $element = $("#" + json_args["element_id"]);
+      LtiConsumerXBlock(runtime, element); // call inherited lti_consumer javascript initialization
+      var $iframe = $element.find("iframe");
+      var $div = $element.find("div");
+      var automatic_resizing =
+        $div.data("automatic-resizing") === "True"
+          ? true
+          : false;
+      var inline_ratio =
+        parseFloat($div.data("inline-ratio")) || false;
+      var inline_height =
+        parseFloat($div.data("inline-height")) || false;
+      var width = $(".content-primary,.vert-mod").width();
+
+      if (automatic_resizing) {
+        $iframe.iFrameResize({
+          // Initialize IframeResizer on lti_consumer iframe
+          checkOrigin: false,
+          log: false,
+        });
+      }
+      if (inline_ratio) {
+        var estimated_height = width * inline_ratio;
+        $iframe.height(estimated_height);
+      } else if (inline_height) {
+        $iframe.height(inline_height);
+      }
+    }
+  </script>
+
+  <script
+    type="text/javascript"
+    src="/static/js/vendor/noreferrer.aa62a3e70ffa.js"
+    charset="utf-8"
+  ></script>
+  <script
+    type="text/javascript"
+    src="/static/js/utils/navigation.17df676f9045.js"
+    charset="utf-8"
+  ></script>
+
+  <script
+    type="text/javascript"
+    src="//tag.aticdn.net/602676/smarttag.js"
+  ></script>
+  <script type="text/javascript">
+    if (window.ATInternet) {
+      var tag = new ATInternet.Tracker.Tag({ site: 602676 });
+      tag.page.set({});
+      tag.dispatch();
+    }
+  </script>
+
+  <div
+    id="reader-feedback"
+    class="sr"
+    style="display: none"
+    aria-hidden="false"
+    aria-atomic="true"
+    aria-live="assertive"
+  ></div>
+  <div id="lean_overlay"></div>
+  <div class="tooltip" style="display: none; opacity: 0"></div>
+  <div id="lean_overlay"></div>
+  <div id="lean_overlay"></div>
+  <div id="lean_overlay"></div>
+  <div>
+    <div
+      style="
+        display: block;
+        position: absolute;
+        top: -999px;
+        left: -999px;
+        font-size: 48px;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+        font-variant: normal;
+        white-space: nowrap;
+        font-weight: 400;
+        font-style: normal;
+        font-family: FontAwesome, sans-serif;
+      "
+    >
+      AxmTYklsjo190QW
+    </div>
+    <div
+      style="
+        display: block;
+        position: absolute;
+        top: -999px;
+        left: -999px;
+        font-size: 48px;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        margin: 0px;
+        padding: 0px;
+        font-variant: normal;
+        white-space: nowrap;
+        font-weight: 400;
+        font-style: normal;
+        font-family: FontAwesome, serif;
+      "
+    >
+      AxmTYklsjo190QW
+    </div>
+  </div>
+  <div
+    style="
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      overflow: hidden;
+      padding: 0px;
+      border: 0px;
+      margin: 0px;
+    "
+  >
+    <div
+      id="MathJax_Font_Test"
+      style="
+        position: absolute;
+        visibility: hidden;
+        top: 0px;
+        left: 0px;
+        width: auto;
+        padding: 0px;
+        border: 0px;
+        margin: 0px;
+        white-space: nowrap;
+        text-align: left;
+        text-indent: 0px;
+        text-transform: none;
+        line-height: normal;
+        letter-spacing: normal;
+        word-spacing: normal;
+        font-size: 40px;
+        font-weight: normal;
+        font-style: normal;
+        font-size-adjust: none;
+        font-family: MathJax_Size1, monospace;
+      "
+    ></div>
+  </div>
+</body>
