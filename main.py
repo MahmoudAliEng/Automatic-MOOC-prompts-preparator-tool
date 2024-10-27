@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import requests
 import fitz  
-from os import remove, listdir
+from os import remove, listdir, makedirs
 from argparse import ArgumentParser
 
 
@@ -127,7 +127,8 @@ def process_html_file(html_content: str) -> None:
 
     soup = BeautifulSoup(html_content, 'html.parser')
     moocer_sections = soup.find_all('h2', string=re.compile(r'MOOCER M[1-9]{1}S[1-9]{1}[A-D]{1}'))
-
+    makedirs('moocer_pdfs', exist_ok=True)
+    makedirs('moocer_prompts', exist_ok=True)
     sections_urls = {}
     fr = True
     for section in moocer_sections:
